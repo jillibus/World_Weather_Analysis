@@ -41,3 +41,13 @@ Your analysis of the data will be split into three main parts, or stages.
 2.  Latitude versus humidity
 3.  Latitude versus cloudiness
 4.  Latitude versus wind speed
+
+## Visualize Travel Data
+
+* Create a heatmap with pop-up markers that can display information on specific cities based on a customer's travel preferences. Complete these steps:
+
+1.  Filter the Pandas DataFrame based on user inputs for a minimum and maximum temperature.
+2.  Create a heatmap for the new DataFrame.
+3.  Find a hotel from the cities' coordinates using Google's Maps and Places API, and Search Nearby feature.
+4.  Store the name of the first hotel in the DataFrame.
+5.  Add pop-up markers to the heatmap that display information about the city, current maximum temperature, and a hotel in the city.
