@@ -14,6 +14,10 @@ hotels that were
 
 Your analysis of the data will be split into three main parts, or stages.
 
+### Resources
+* Data Source: city_data.csv, ride_data.csv
+* Software: Python 3.7.10, Jupyter Notebook 6.3.0, CitiPy 0.0.5, APIs, JSON Traversals
+* 
 ## Collect the Data
 * Use the NumPy module to generate more than 1,500 random latitudes and longitudes.
 * Use the citipy module to list the nearest city to the latitudes and longitudes.
