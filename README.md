@@ -1,5 +1,7 @@
 # World_Weather_Analysis
 
+![logo](analysis/module6-logo.png)
+
 ## Overview
 At the most fundamental level, Jack needs help answering a question: How might we provide real-time suggestions for our client's ideal hotels? Your first task was to define what you meant by "ideal." So, over the course of the conversation, you narrowed that to 
 hotels that were 
