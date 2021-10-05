@@ -4,10 +4,9 @@ World_Weather_Analysis
 ![logo](analysis/module6-logo.png)
 
 ## Overview
-At the most fundamental level, Jack needs help answering a question: How might we provide real-time suggestions for our client's ideal hotels? Your first task was to define what you meant by "ideal." So, over the course of the conversation, you narrowed that to 
-hotels that were 
-1.  within a given range of latitude and longitude and that
-2.  provided the right kind of weather for the client.
+At the most fundamental level, Jack needs help answering a question: How might we provide real-time suggestions for our client's ideal hotels? Your first task was to define what you meant by "ideal." So, over the course of the conversation, you narrowed that to hotels that were: 
+1.  within a given range of latitude and longitude and 
+2.  that provided the right kind of weather for the client.
 
 * _**Task:**_ Collect and analyze weather data across cities worldwide.
 * _**Plan:**_ PlanMyTrip will use the data to recommend ideal hotels based on clients' weather preferences.
@@ -18,14 +17,14 @@ Your analysis of the data will be split into three main parts, or stages.
 ### Resources
 * Data Source: city_data.csv, ride_data.csv
 * Software: Python 3.7.10, Jupyter Notebook 6.3.0, CitiPy 0.0.5, APIs, JSON Traversals
-* 
+ 
 ## Collect the Data
-* Use the NumPy module to generate more than 1,500 random latitudes and longitudes.
+* Use the NumPy module to generate more than 2,000 random latitudes and longitudes.
 * Use the citipy module to list the nearest city to the latitudes and longitudes.
 * Use the OpenWeatherMap API to request the current weather data from each unique city in your list.
 * Parse the JSON data from the API request.
 * Collect the following data from the JSON file and add it to a DataFrame:
-1.  City, country, and date
+1.  City, Country
 2.  Latitude and longitude
 3.  Maximum temperature
 4.  Humidity
