@@ -4,9 +4,28 @@ World_Weather_Analysis
 ![logo](analysis/module6-logo.png)
 
 ## Overview
-At the most fundamental level, Jack needs help answering a question: How might we provide real-time suggestions for our client's ideal hotels? Your first task was to define what you meant by "ideal." So, over the course of the conversation, you narrowed that to hotels that were: 
-1.  within a given range of latitude and longitude and 
-2.  that provided the right kind of weather for the client.
+This project was to learn about how to utilize Application Programming Interfaces or API's.  Then we were to develop a small application, PlanMyTrip to see if we could find Cities, Hotels, Weather Details of the Cities, and plan a Trip and detail it on a Map.
+
+## My Process
+First I generated 2,000 random Latitudes and Longitudes, then submitted them via the Google Maps API and requested the information in JSON format if the Latitude and Longitude pairing returned a city.  
+
+Reading the response from Google Maps, if we found a city, from these random parings, we retrieved the following information: City, Country, Latitude, Longitude, Maximum Temperature, Humidity, Cloudiness, Wind Speed and Current Description of each city, and stored it into a DataFrame.
+
+![Clean Hotel](analysis/City_DF.png)
+
+---
+I then requested a user to enter their desired minimum temperature and maximum temperature of their perfect vacation.  I entered those values in our DataFrame as a filter and those cities that met the criteria, were saved into a new Dataframe for a 'perfect vacation'. My next task was go to back to Google Maps and look for the closest Hotel in each of those cities and added the new column, Hotel to the DataFrame.
+
+![Vacation Dataframe](analysis/clean_hotel_df.png)
+
+---
+My next goal was to create a Vacation Itinerary.  I choose a city where we would depart from, three stops along the way, and we would return back to our originating city.  I chose these cities from our list of cities found in our Vacation Search.   With that chosen I then plotted a trip route showing our trip, creating details of our hotels with the markers on the map.
+
+![route map](Vacation_Itinerary/WeatherPy_travel_map.png)
+
+
+
+
 
 * _**Task:**_ Collect and analyze weather data across cities worldwide.
 * _**Plan:**_ PlanMyTrip will use the data to recommend ideal hotels based on clients' weather preferences.
@@ -15,7 +34,7 @@ At the most fundamental level, Jack needs help answering a question: How might w
 Your analysis of the data will be split into three main parts, or stages.
 
 ### Resources
-* Data Source: city_data.csv, ride_data.csv
+* Data Source: Google Maps API Connection
 * Software: Python 3.7.10, Jupyter Notebook 6.3.0, CitiPy 0.0.5, APIs, JSON Traversals
  
 ## Collect the Data
